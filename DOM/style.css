@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-image: url('IMAGE/MN.jpg');
+    background-size: cover;
+}
+
+.container {
+    height: 450px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: var(--background);
+    backdrop-filter: blur(0.9rem);
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label{
+    display: flex;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    background-color: white;
+    border: 1px solid #585858;
+    color: black;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: red; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+button:hover{
+    background-color: lightsalmon;
+    color: black;
+}
+
+button.add-income {
+    background-color:#4CAF50 ; /* Blue */
+}
+button.add-income:hover{
+    background-color: lightgreen;
+}
+
+#balance {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#transaction-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    max-height: 200px; 
+}
+
+#transaction-list li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
